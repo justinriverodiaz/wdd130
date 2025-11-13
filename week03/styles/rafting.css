@@ -1,0 +1,120 @@
+/* Step 1: Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Step 2: Variables */
+:root {
+  --primary-color: #002B5B;
+  --secondary-color: #00509E;
+  --accent-color: #FFD500;
+  --text-color: #333;
+  --body-font: "Arial", sans-serif;
+}
+
+/* Step 3: Base body style */
+body {
+  font-family: var(--body-font);
+  color: var(--text-color);
+  background-color: #fff;
+  line-height: 1.6;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.logo {
+  width: 120px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--accent-color);
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 43, 91, 0.7);
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+}
+
+/* Intro Section */
+.intro {
+  padding: 1rem;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.intro img {
+  width: 200px;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+}
+
+/* History */
+.history {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.history h2 {
+  margin-bottom: 0.5rem;
+}
+
+/* Adventure */
+.adventure {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 1rem;
+}
+
+.social img {
+  width: 24px;
+  margin: 0 0.3rem;
+}
